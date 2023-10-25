@@ -4,6 +4,7 @@
 
 body {
     margin: 0; 
+    font-family:"sohne-var","Helvetica Neue","Arial",sans-serif; 
 }
 
 .container {
@@ -12,17 +13,24 @@ body {
 }
 
 .nav {
-    background-color: #333; 
-    color: white; 
+    background-color: white; 
+    color:black;
     display: flex; 
     justify-content: space-between; 
     align-items: stretch; 
     gap: 2rem; 
-    padding: 0 1rem; 
+    padding: 0rem 1rem; 
 }
 
 .nav-title {
     font-size: 2rem; 
+    font-weight: bold; 
+    color:rgb(225, 255, 225); 
+}
+
+.nav-link {
+    font-size: 1.33rem; 
+    font-weight: bold; 
 }
 
 .nav a {
@@ -48,4 +56,8 @@ body {
 
 .nav li:hover {
     background-color: #777; 
+}
+
+#canvas1 {
+    
 }

@@ -3,10 +3,12 @@ import { Link, useMatch, useResolvedPath } from 'react-router-dom'
 export default function Navbar() {
     return (
         <nav className='nav'>
-            <Link to='/' className='nav-title'>PayTracker</Link>
+            <div className='nav-title'>
+                <Link to='/'>paytrack</Link>
+            </div>
             <ul>
-                <CustomLink to='/transactions'>Transactions</CustomLink>
-                <CustomLink to='/display'>Display</CustomLink>
+                <CustomLink to='/transactions'>transactions</CustomLink>
+                <CustomLink to='/display'>display</CustomLink>
             </ul>
         </nav>
     )
@@ -25,7 +27,7 @@ function CustomLink({to, children, props}: linkProps) {
 
     return (
         <li className={isActive ? 'active' : ''}>
-            <Link to={to}>{children}</Link>
+            <Link className='nav-link' to={to}>{children}</Link>
         </li>
     )
 }

@@ -1,3 +1,3 @@
 export default function Display() {
-    return <h1>Display</h1>; 
+    return <h1>display</h1>; 
 }
