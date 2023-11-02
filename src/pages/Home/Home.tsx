@@ -1,4 +1,4 @@
-import Canvas from './components/Canvas.tsx'; 
+//import Canvas from 'src/components/Canvas.tsx'; 
 
 export default function Home() {
     // let c = document.getElementById("canvas1") as HTMLCanvasElement; 
@@ -20,7 +20,7 @@ export default function Home() {
     // }
     return (
         <>
-            <Canvas />
+            {/* <Canvas /> */}
             <h1>home</h1>
         </>
     )
