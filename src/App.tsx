@@ -7,16 +7,19 @@ import './styles.css'
 
 function App() {
   return (
-    <div className='container'>
-      <Navbar />
-      <div className='nav-container'>
-        <Routes>
-          <Route path='/' element={<Home />} />
-          <Route path='/transactions' element={<Transactions />} />
-          <Route path='/display' element={<Display />} />
-        </Routes>
+    <>
+      <div className='nav-border'></div>
+      <div className='container'>
+        <Navbar />
+        <div className='nav-container'>
+          <Routes>
+            <Route path='/' element={<Home />} />
+            <Route path='/transactions' element={<Transactions />} />
+            <Route path='/display' element={<Display />} />
+          </Routes>
+        </div>
       </div>
-    </div>
+    </>
   )
 }
 
