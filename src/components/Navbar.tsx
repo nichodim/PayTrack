@@ -5,7 +5,7 @@ export default function Navbar() {
     return (
         <nav className='nav'>
             <div className='nav-title'>
-                <Link to='/'><span style={{marginTop: '10x'}}><Logo /></span>paytrack</Link>
+                <Link to='/'><span style={{display: 'flex'}}><Logo /></span>paytrack</Link>
             </div>
             <ul>
                 <CustomLink to='/transactions'>transactions</CustomLink>
